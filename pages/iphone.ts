@@ -13,11 +13,6 @@ export class iPhoneDetailsPage {
   readonly buttonAppleCareOption: Locator;
   readonly buttonAddToCart: Locator;
 
-//   readonly getStartedLink: Locator;
-//   readonly gettingStartedHeader: Locator;
-//   readonly pomLink: Locator;
-//   readonly tocList: Locator;
-
   constructor(page: Page) {
     this.page = page;
     this.productHeader = page.locator('[data-autom="bfe-header"]')
@@ -30,15 +25,6 @@ export class iPhoneDetailsPage {
     this.buttonAnyCarrier = page.locator('[data-autom="carrierModelUNLOCKED/US"] + label')
     this.buttonAppleCareOption = page.locator('[data-autom="applecareplus_58_noapplecare"] + label')
     this.buttonAddToCart = page.locator('button[data-autom="add-to-cart"]')
-
-    // this.getStartedLink = page.locator('a', { hasText: 'Get started' });
-    // this.gettingStartedHeader = page.locator('h1', { hasText: 'Installation' });
-    // this.pomLink = page.locator('li', {
-    //   hasText: 'Guides',
-    // }).locator('a', {
-    //   hasText: 'Page Object Model',
-    // });
-    // this.tocList = page.locator('article div.markdown ul > li > a');
   }
 
   async open() {
